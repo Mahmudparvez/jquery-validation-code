@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<link rel="stylesheet" href="style.css">
+	
+
+
+</head>
+<body>
+	
+
+		
+	<input id="username" type="text">
+	<h1></h1>
+	
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+
+
+		
+		$(document).ready(function(){
+
+
+		$("input#username").keyup(function(){
+
+			var value = $( " input#username " ).val();
+
+			var okkhor = value.length;
+
+
+			if( value == 'haq474747' ){
+				$('h1').html("<span style='color:purple;'>  এই নাম আশরাফুল ভাই নিয়া নিছে , , দয়া করে অন্য নাম চেস্ঠা করুন  </span>");
+			}else if( okkhor == 0 ){
+
+				$('h1').html(" ");
+
+			}else if( okkhor > 0 && okkhor <= 5 ){
+
+				$('h1').html("<span style='color:blue;'> আপনি লিখতে থাকুন </span>");
+
+			}else if( okkhor >= 6 && okkhor <= 12  ){
+
+				$('h1').html("<span style='color:green;'> আপনি চাইলে থামতে পারেন </span>");
+
+			}else if( okkhor > 12 ){
+
+				$('h1').html("<span style='color:red;'> ভাই আর লেখা যাবে না , , ধন্যবাদ </span>");
+
+			}
+
+
+
+		});
+			
+
+
+
+
+
+			
+		});
+
+
+
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>
