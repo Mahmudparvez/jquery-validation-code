@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: candara;
+}
+
+.reg {
+	width: 400px;
+	padding: 30px;
+	border: 1px solid #ccc;
+	margin: 100px auto; 
+
+}
+
+
+.reg hr {
+	margin: 20px 0px;
+}
+.reg-form label{
+	font-size: 14px;
+	color: #333;
+	display: block;
+}
+
+.reg-form input {
+	display: block; 
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.reg-form input[type="submit"] {
+	margin-top: 10px;
+	font-weight: bold; 
+	background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}

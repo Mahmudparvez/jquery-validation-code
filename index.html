@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<link rel="stylesheet" href="style.css">
+	
+
+
+</head>
+<body>
+	
+
+
+	<div class="reg">
+		<h2>Sign Up</h2>
+		<p>Create your account now</p>
+
+		<h3></h3>
+		<hr>
+		<div class="reg-form">
+			<label for="name">Name</label>
+			<input id="name" type="text">
+			<p class="name"></p>
+
+
+			<label for="uname">Username</label>
+			<input id="uname" type="text">
+			<p class="uname"></p>
+
+			<label for="pass">Password</label>
+			<input id="pass" type="password">
+			<p class="pass"></p>
+
+
+			<input id="submit" type="submit" value="Sign Up">
+		</div>
+	</div>
+
+
+	
+	
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+
+
+		
+		$(document).ready(function(){
+
+			$(".reg .reg-form input#submit").click(function(){
+
+				var name = $("input#name").val();
+				var uname = $("input#uname").val();
+				var pass = $("input#pass").val();
+
+				if( name == '' ){
+					$("p.name").html("<span style='color:red; font-size:10px;'>* This field is required</span>");
+				}else {
+
+					$("p.name").html("");
+				}
+
+				if( uname == '' ){
+					$("p.uname").html("<span style='color:red; font-size:10px;'>* This field is required</span>");
+				}else{
+					$("p.uname").html("");
+				}
+
+
+				if( pass == '' ){
+					$("p.pass").html("<span style='color:red; font-size:10px;'>* This field is required</span>");
+				}else{
+					$("p.pass").html(" ");
+
+				}
+
+
+
+
+			});
+
+		});
+
+
+
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>
